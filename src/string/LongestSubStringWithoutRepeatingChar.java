@@ -9,7 +9,7 @@ public class LongestSubStringWithoutRepeatingChar {
 
     public static void main(String[] args) {
 
-        String str = "abcabcaad";
+        String str = "bhavyamohanlalsuthar";
 
         Map<Character, Integer> map = new HashMap<>();
 

@@ -13,7 +13,7 @@ public class AllInOneConcepts {
         //min
         System.out.println("minimum number is: ");
         System.out.println(Arrays.stream(arr).min().orElse(0));
-        System.out.println(list.stream().mapToInt(i -> i).min().orElse(0));
+        System.out.println(list.stream().mapToInt(i->i).min().orElse(0));
         //list take comparator
         System.out.println(list.stream().min(Integer::compare).orElse(0));
         System.out.println(list.stream().min((a, b) -> (a - b)).orElse(0));
@@ -42,8 +42,8 @@ public class AllInOneConcepts {
         System.out.println(list.stream().mapToInt(i -> i).sum());
 
         //using reduce same in list and array
-        System.out.println(Arrays.stream(arr).reduce(Integer::sum).orElse(0));
-        System.out.println(list.stream().reduce(Integer::sum).orElse(0));
+        System.out.println(Arrays.stream(arr).reduce(0, Integer::sum));
+        System.out.println(list.stream().reduce(0, Integer::sum));
 
 
         //Average

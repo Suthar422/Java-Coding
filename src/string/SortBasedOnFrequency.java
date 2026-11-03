@@ -1,6 +1,7 @@
 package string;
 
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,6 +22,8 @@ public class SortBasedOnFrequency {
         map.entrySet().stream()
                 .sorted((e1, e2) ->
                         e2.getValue()-e1.getValue()).forEach(System.out::println);
+
+     //   map.entrySet().stream().sorted(Comparator.comparing(Map.Entry::getValue)).forEach(System.out::println);
     }
 
 }
