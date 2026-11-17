@@ -1,4 +1,4 @@
-package patter;
+package pattern;
 
 
 /*
@@ -8,7 +8,7 @@ package patter;
 1******1
  */
 
-public class Patter1 {
+public class Pattern1 {
 
     public static void main(String[] args) {
 

@@ -23,6 +23,7 @@ public class SecondHighest {
 
         System.out.println(secondMax);
 
+        //stream version
         Arrays.stream(arr).distinct().boxed().sorted(Comparator.reverseOrder()).skip(1).findFirst().ifPresent(System.out::println);
     }
 }
